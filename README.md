@@ -1,7 +1,7 @@
 # H-Infinity Control For Learning
 
-심층 신경망 기반 H-Infinity Controller Tuner 개발을 위한 시뮬레이션 프로그램입니다.
+Simulation program for developing a deep-neural-network-based H-infinity controller tuner.
 
-GTM(Generic Transport Model) 기반 비선형 항공기 동역학 모델과 LPVTools를 이용해 H-Infinity 제어기 설계 및 학습 데이터 생성을 수행합니다.
+**Content:** Uses a GTM (Generic Transport Model)-based nonlinear aircraft dynamics model together with LPVTools to design H-infinity controllers across a range of flight/morphing conditions, generating (flight condition, tuned controller) pairs as training data for a neural network that learns to predict tuned H-infinity controller parameters directly from flight condition.
 
-개발환경: MATLAB / Simulink
+Development environment: MATLAB / Simulink
