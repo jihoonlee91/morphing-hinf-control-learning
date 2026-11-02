@@ -56,7 +56,7 @@ example   % smaller worked example
 | | Publication |
 |---|---|
 | Same idea, PID | [Gain Scheduling Using Deep Neural Network for Morphing Aircraft](https://jihoonlee91.github.io/papers/2024-dnn-gain-scheduling-morphing-ko.html) — *JKSAS 2024* |
-| Control across the envelope | [Linear Parameter-Varying Control of Variable Span-Sweep Morphing Aircraft](https://jihoonlee91.github.io/papers/2019-lpv-variable-span-sweep-morphing.html) — *AIAA SciTech 2019* |
+| Control across the envelope (GTM) | [Self-Scheduled LPV Control of Asymmetric Variable-Span Morphing UAV](https://jihoonlee91.github.io/papers/2023-self-scheduled-lpv-asymmetric-morphing-uav.html) — *Sensors 2023* |
 | Learning-based control | [Control Design Using Policy-Gradient-Based Integral Reinforcement Learning and Extended State Observer for Morphing Aircraft](https://jihoonlee91.github.io/papers/2024-policy-gradient-irl-eso-morphing.html) — *IEEE TAES 2024* |
 
 <sub>Part of my morphing-aircraft control research at the Seoul National University Flight Dynamics and Control Lab — more at <a href="https://jihoonlee91.github.io/">jihoonlee91.github.io</a>.</sub>
