@@ -19,12 +19,13 @@ Hand-tuning a robust controller at every flight and morphing condition does not 
 
 ```mermaid
 flowchart LR
-    A["GTM-based nonlinear model<br/>+ morphing configurations"] --> B["Trim & linearize<br/>per condition"]
+    A["Span-sweep morphing UAV<br/>(XFLR5 aero data)"] --> B["Trim & linearize<br/>per condition"]
     B --> C["Mixed-sensitivity H∞<br/>synthesis (mixsyn / hinfsyn)"]
     C --> D[("(condition, tuned controller)<br/>pairs")]
     D -.-> E["Neural-network tuner<br/>(next step)"]
 ```
 
+- Aircraft: a span-and-sweep morphing UAV (span 3 → 4.5 m, sweep 0 → 40°), aerodynamic coefficients from XFLR5 — the same airframe as the AIAA 2019 and JKSAS 2024 papers below
 - Aerodynamic database, nonlinear and linearized aircraft models, mass/inertia distribution
 - Baseline **LQR** and **mixed-sensitivity H∞** designs, with trim and eigenvalue/mode analysis across morphing configurations
 - Self-contained **nonlinear closed-loop simulation** in `nonlinearSIM/`
@@ -55,8 +56,7 @@ example   % smaller worked example
 
 | | Publication |
 |---|---|
-| Same idea, PID | [Gain Scheduling Using Deep Neural Network for Morphing Aircraft](https://jihoonlee91.github.io/papers/2024-dnn-gain-scheduling-morphing-ko.html) — *JKSAS 2024* |
-| Control across the envelope (GTM) | [Self-Scheduled LPV Control of Asymmetric Variable-Span Morphing UAV](https://jihoonlee91.github.io/papers/2023-self-scheduled-lpv-asymmetric-morphing-uav.html) — *Sensors 2023* |
-| Learning-based control | [Control Design Using Policy-Gradient-Based Integral Reinforcement Learning and Extended State Observer for Morphing Aircraft](https://jihoonlee91.github.io/papers/2024-policy-gradient-irl-eso-morphing.html) — *IEEE TAES 2024* |
+| Same aircraft — LPV control | [Linear Parameter-Varying Control of Variable Span-Sweep Morphing Aircraft](https://jihoonlee91.github.io/papers/2019-lpv-variable-span-sweep-morphing.html) — *AIAA SciTech 2019* |
+| Same aircraft — same idea with PID | [Gain Scheduling Using Deep Neural Network for Morphing Aircraft](https://jihoonlee91.github.io/papers/2024-dnn-gain-scheduling-morphing-ko.html) — *JKSAS 2024* |
 
 <sub>Part of my morphing-aircraft control research at the Seoul National University Flight Dynamics and Control Lab — more at <a href="https://jihoonlee91.github.io/">jihoonlee91.github.io</a>.</sub>
