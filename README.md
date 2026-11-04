@@ -11,6 +11,12 @@
 
 </div>
 
+## Highlights
+
+- Mixed-sensitivity H∞ controllers synthesized automatically at every flight and morphing condition of a span-and-sweep morphing UAV.
+- The output is (condition, tuned controller) pairs: training data for a neural network that replaces a hand-built gain schedule.
+- The same pipeline with PID gains was published in *JKSAS* 2024; this is its H∞ counterpart (research prototype).
+
 ## Why
 
 Hand-tuning a robust controller at every flight and morphing condition does not scale. If tuned controllers can be generated automatically across the envelope, a neural network can learn the mapping **flight condition → controller parameters** and replace the hand-built schedule. This repository is the H∞ side of that idea; the PID version was published as [Gain Scheduling Using Deep Neural Network for Morphing Aircraft](https://jihoonlee91.github.io/papers/2024-dnn-gain-scheduling-morphing-ko.html) (*JKSAS 2024*).
