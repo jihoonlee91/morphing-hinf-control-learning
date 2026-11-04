@@ -7,6 +7,8 @@
 ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
 ![Simulink](https://img.shields.io/badge/Simulink-0076A8?style=flat-square)
 ![LPVTools](https://img.shields.io/badge/LPVTools-H%E2%88%9E%20synthesis-555?style=flat-square)
+[![MATLAB smoke test](https://github.com/jihoonlee91/morphing-uav-hinf-learning/actions/workflows/matlab.yml/badge.svg)](https://github.com/jihoonlee91/morphing-uav-hinf-learning/actions/workflows/matlab.yml)
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=jihoonlee91/morphing-uav-hinf-learning&file=main.m)
 ![Status](https://img.shields.io/badge/status-research%20prototype-orange?style=flat-square)
 
 </div>
@@ -48,6 +50,8 @@ flowchart LR
 main      % top-level entry point
 example   % smaller worked example
 ```
+
+A quick check that your MATLAB has everything (it also runs in CI on every push): `runtests("tests")` from the repository root — trims and linearizes across the morphing grid and synthesizes one mixed-sensitivity H∞ controller.
 
 <details>
 <summary><b>Repository layout</b></summary>
