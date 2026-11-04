@@ -79,6 +79,6 @@ GitHub's **Cite this repository** button uses [`CITATION.cff`](CITATION.cff).
 
 ## License
 
-The bundled LPVTools v1.0 (MUSYN Inc. / University of Minnesota) is licensed under the GNU AGPL-3.0 — see `LPVToolsV1.0/agpl-3.0.txt`.
+Original code: MIT. Bundled parts keep their own licenses: LPVTools v1.0 (MUSYN Inc. / University of Minnesota) is GNU AGPL-3.0 (`LPVToolsV1.0/agpl-3.0.txt`), `gtm_design.slx` comes from NASA GTM_DesignSim (NASA Open Source Agreement 1.3), and two plotting helpers are MATLAB File Exchange utilities. See [`LICENSE.md`](LICENSE.md).
 
 <sub>Part of my morphing-aircraft control research at the Seoul National University Flight Dynamics and Control Lab — more at <a href="https://jihoonlee91.github.io/">jihoonlee91.github.io</a>.</sub>
