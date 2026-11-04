@@ -30,6 +30,12 @@ flowchart LR
 - Baseline **LQR** and **mixed-sensitivity H∞** designs, with trim and eigenvalue/mode analysis across morphing configurations
 - Self-contained **nonlinear closed-loop simulation** in `nonlinearSIM/`
 
+## Requirements
+
+- MATLAB R2021b or later with Simulink (`model.slx` was saved in R2021b; `model.slx.r2014b` is an older-format copy)
+- Control System Toolbox, Robust Control Toolbox (`mixsyn`), Optimization Toolbox (`fmincon` for trim), Aerospace Toolbox (`atmosisa`)
+- LPVTools v1.0 is bundled (`LPVToolsV1.0/`, and a copy inside `nonlinearSIM/`)
+
 ## Quick start
 
 ```matlab
