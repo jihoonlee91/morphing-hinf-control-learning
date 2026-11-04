@@ -44,11 +44,11 @@ example   % smaller worked example
 
 **Controller design** — `lqr_design.m` (baseline LQR); `mixsyndesign.m` (mixed-sensitivity H∞ via LPVTools); `trim_calc.m`, `trim_cost.m`, `morphing_eig.m` (trim and mode analysis)
 
-**Simulation** — `model.slx`, `gtm_design.slx`; `main.m`, `example.m`; `nonlinearSIM/` (self-contained nonlinear closed-loop simulation); `v8/` (earlier snapshot of the top-level scripts)
+**Simulation** — `model.slx`, `gtm_design.slx`; `main.m`, `example.m`; `nonlinearSIM/` (self-contained nonlinear closed-loop simulation)
 
 **Plotting** — `plot_aero.m`, `plot_mode.m`, `plot_result.m`, `plot_result_2.m`, `plot_step.m`, `plot_trim_lpv.m`, `plot_trimx.m`, `polezeromap.*`
 
-`LPVToolsV1.0/` is vendored in the root, `nonlinearSIM/`, and `v8/`, since each is self-contained.
+`LPVToolsV1.0/` is vendored in the root and in `nonlinearSIM/`, since each is self-contained.
 
 </details>
 
@@ -58,5 +58,11 @@ example   % smaller worked example
 |---|---|
 | Same aircraft — LPV control | [Linear Parameter-Varying Control of Variable Span-Sweep Morphing Aircraft](https://jihoonlee91.github.io/papers/2019-lpv-variable-span-sweep-morphing.html) — *AIAA SciTech 2019* |
 | Same aircraft — same idea with PID | [Gain Scheduling Using Deep Neural Network for Morphing Aircraft](https://jihoonlee91.github.io/papers/2024-dnn-gain-scheduling-morphing-ko.html) — *JKSAS 2024* |
+
+GitHub's **Cite this repository** button uses [`CITATION.cff`](CITATION.cff).
+
+## License
+
+The bundled LPVTools v1.0 (MUSYN Inc. / University of Minnesota) is licensed under the GNU AGPL-3.0 — see `LPVToolsV1.0/agpl-3.0.txt`.
 
 <sub>Part of my morphing-aircraft control research at the Seoul National University Flight Dynamics and Control Lab — more at <a href="https://jihoonlee91.github.io/">jihoonlee91.github.io</a>.</sub>

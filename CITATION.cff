@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it with the related publications below."
+title: "morphing-hinf-control-learning: H-infinity controllers across the morphing envelope as training data for a learned controller tuner"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Jihoon
+    orcid: "https://orcid.org/0000-0001-5327-824X"
+repository-code: "https://github.com/jihoonlee91/morphing-hinf-control-learning"
+keywords:
+  - morphing aircraft
+  - H-infinity control
+  - robust control
+  - gain scheduling
+  - deep neural network
+references:
+  - type: conference-paper
+    title: "Linear Parameter-Varying Control of Variable Span-Sweep Morphing Aircraft"
+    authors:
+      - family-names: Lee
+        given-names: Jihoon
+      - family-names: Kim
+        given-names: Seong-hun
+      - family-names: Jung
+        given-names: Seungyun
+      - family-names: Lee
+        given-names: Hanna
+      - family-names: Kim
+        given-names: Youdan
+    collection-title: "AIAA SciTech 2019 Forum"
+    year: 2019
+    doi: "10.2514/6.2019-0106"
+  - type: article
+    title: "Gain Scheduling Using Deep Neural Network for Morphing Aircraft"
+    authors:
+      - family-names: Lee
+        given-names: Jihoon
+      - family-names: Lee
+        given-names: Suwon
+      - family-names: Yoon
+        given-names: Euichan
+    journal: "Journal of the Korean Society for Aeronautical & Space Sciences"
+    volume: 52
+    issue: 4
+    start: 297
+    end: 306
+    year: 2024
+    doi: "10.5139/jksas.2024.52.4.297"
